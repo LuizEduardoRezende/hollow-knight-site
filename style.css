@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Trajan;
+    src: url(fonts/Trajan\ Pro\ Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins/Poppins-Light.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppinsbold;
+    src: url(fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url(fonts/Poppins/Poppins-Medium.ttf) format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --fonte1: 'Trajan', Cursive;
+    --fonte2: Poppins, Verdana, sans-serif;
+    --fonte3: PoppinsMedium,Verdana, sans-serif;
+
+    --cor1: #D9C7D6;
+    --cor2: #8A88BF;
+    --cor3: #3F618C;
+    --cor4: #1E3259;
+    --cor5: #0F1226;
+    --cor6: #05050F;
+    --cor7: #000000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    color: white;
+}
+
+body {
+    background: var(--cor7);
+}
+
+
+header {
+    background-color: var(--cor7);
+    padding: 30px;
+}
+
+header img {
+    max-width: 300px;
+}
+
+nav {
+    font-family: var(--fonte3);
+    font-size: 1.2em;
+    background-color: var(--cor7);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a {
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 0px 0px 10px white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding-bottom: 200px;
+}
+
+body h1 {
+    color: white;
+    font-family: var(--fonte3);
+    font-weight: normal;
+    font-size: 2.5em;
+    
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+section#sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+
+    color: white;
+    font-family: var(--fonte2);
+}
+
+#sobre .images {
+    height: 350px;
+    margin: 20px 60px;
+}
+
+#sobre #explore {
+    margin: 20px 60px;
+    padding-top: 50px;
+}
+
+#sobre #explore h2{
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+#sobre #cavaleiro {
+    margin: 20px 60px;
+}
+
+#sobre #cavaleiro h2{
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+#sobre #cavaleiro p{
+    margin-top: 15px;
+}
+
+#sobre #city {
+    background: lightblue url(images/city_of_tears.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#sobre #river {
+    background: lightblue url(images/river.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#sobre #knight {
+    background: url(images/the_knight.png) center center no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.paralax {
+    background: black url(images/paralax.jpeg) center center no-repeat fixed;
+    background-size: cover;
+    width: 80vw;
+    height: 780px;
+}
+
+footer {
+    background-color: var(--cor5);
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    color: white;
+    font-family: var(--fonte2);
+    font-weight: normal;
+    font-size: 1em;
+    padding: 10px;
+}
